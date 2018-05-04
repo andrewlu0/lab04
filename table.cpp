@@ -87,7 +87,7 @@ std::ostream& operator << (std::ostream& out, const Table& t){
 
 	quickSort(output,0,output.size()-1);
 	for (int i = 0; i < output.size(); i++){
-		std::cout << output.at(i).get_key() << ": " << output.at(i).get_data() << std::endl;
+		out  << output.at(i).get_key() << ": " << output.at(i).get_data() << std::endl;
 	}
 }
 
