@@ -84,21 +84,10 @@ std::ostream& operator << (std::ostream& out, const Table& t){
 				output.push_back(t.values[i].at(j));
 		}
 	}
-	
-	std::vector<int> test;
-	test.push_back(133);
-	test.push_back(3);
-	test.push_back(0);
-	test.push_back(38);
-	test.push_back(4);
-	/*
-	for (int i = 0; i < test.size(); i++){
-		std::cout << test[i] << std::endl;
-	}
-	*/
+
 	quickSort(output,0,output.size()-1);
 	for (int i = 0; i < output.size(); i++){
-		std::cout << output.at(i).get_key() << " " << output.at(i).get_data() << std::endl;
+		std::cout << output.at(i).get_key() << ": " << output.at(i).get_data() << std::endl;
 	}
 }
 
